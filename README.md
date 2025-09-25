@@ -11,3 +11,7 @@ terraform init #initializes the terraform
 terraform plan #gives overview plan to create
 terraform apply #apply the changes
 terraform destory #destroy the changes
+
+#push your code by adding .gitignore file
+git rm --cached terraform.tfstate terraform.tfstate.backup
+git rm --cached -r .terraform/
